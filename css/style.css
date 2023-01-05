@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+  height: 100vh; }
+  .container .first_screen {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -50%); }
+    .container .first_screen .logo {
+      width: 150px;
+      height: 150px;
+      margin: 28px auto; }
+      .container .first_screen .logo img {
+        display: block;
+        width: 100%; }
+    .container .first_screen h1 {
+      margin-bottom: 35px;
+      text-transform: capitalize;
+      text-align: center; }
+    .container .first_screen form .user_pass, .container .first_screen form .user_login {
+      position: relative;
+      margin-bottom: 25px;
+      transition: 0.3s; }
+      .container .first_screen form .user_pass:hover input, .container .first_screen form .user_login:hover input {
+        border: solid 1px #3390EC; }
+      .container .first_screen form .user_pass:hover label, .container .first_screen form .user_login:hover label {
+        color: #3390EC; }
+      .container .first_screen form .user_pass label, .container .first_screen form .user_login label {
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 12px;
+        background-color: #fff;
+        padding: 0 4px;
+        font-size: 16px;
+        color: #707579; }
+      .container .first_screen form .user_pass input, .container .first_screen form .user_login input {
+        padding: 11px 13px;
+        border-radius: 10px;
+        border: solid 1px #99BA92;
+        width: 25vw;
+        height: 3.375rem; }
+        .container .first_screen form .user_pass input:focus-visible, .container .first_screen form .user_login input:focus-visible {
+          outline-color: #3390EC; }
+
+/*# sourceMappingURL=style.css.map */
