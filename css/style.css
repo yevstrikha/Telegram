@@ -9,67 +9,82 @@
   margin: auto;
   padding: 0 15px;
   height: 100vh; }
-  .container .first_screen {
-    overflow: hidden;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -45%);
-    max-width: 370px;
-    width: 100%; }
-    .container .first_screen .logo {
-      width: 130px;
-      height: 130px;
-      margin: 28px auto; }
-      .container .first_screen .logo img {
-        display: block;
-        width: 100%; }
-    .container .first_screen h1 {
-      margin-bottom: 35px;
-      text-transform: capitalize;
-      text-align: center;
-      font-family: "Roboto", sans-serif;
-      letter-spacing: 0.1rem; }
-    .container .first_screen .login_form form .user_pass, .container .first_screen .login_form form .user_login {
-      position: relative;
-      margin-bottom: 25px;
-      transition: 0.3s; }
-      .container .first_screen .login_form form .user_pass:hover input, .container .first_screen .login_form form .user_login:hover input {
-        border: solid 1px #3390EC; }
-      .container .first_screen .login_form form .user_pass:hover label, .container .first_screen .login_form form .user_login:hover label {
-        color: #3390EC; }
-      .container .first_screen .login_form form .user_pass label, .container .first_screen .login_form form .user_login label {
+  .container .main_screen {
+    height: 100vh;
+    display: flex; }
+    .container .main_screen .left_side {
+      width: 40%;
+      background-color: #ffffff; }
+      .container .main_screen .left_side .menu_panel {
+        width: 100%;
+        height: 40px;
+        padding: 10px; }
+        .container .main_screen .left_side .menu_panel .burger_menu {
+          width: 30px;
+          height: 20px;
+          position: relative;
+          cursor: pointer; }
+          .container .main_screen .left_side .menu_panel .burger_menu .burger {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            background-color: #858383; }
+            .container .main_screen .left_side .menu_panel .burger_menu .burger:before {
+              content: '';
+              width: 20px;
+              height: 2px;
+              background-color: #858383;
+              position: absolute;
+              top: 5px;
+              left: 0; }
+            .container .main_screen .left_side .menu_panel .burger_menu .burger:after {
+              content: '';
+              width: 20px;
+              height: 2px;
+              background-color: #858383;
+              position: absolute;
+              top: -5px;
+              left: 0; }
+      .container .main_screen .left_side .user_list ul {
+        list-style: none;
+        padding: 5px 0; }
+        .container .main_screen .left_side .user_list ul li {
+          margin-bottom: 3px;
+          padding: 5px 0;
+          display: flex;
+          align-items: center; }
+          .container .main_screen .left_side .user_list ul li .user_face {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #000;
+            overflow: hidden;
+            margin-right: 15px; }
+            .container .main_screen .left_side .user_list ul li .user_face img {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+    .container .main_screen .right_side {
+      background: url(../images/pattern-20.svg);
+      min-width: 70%;
+      position: relative; }
+      .container .main_screen .right_side:before {
+        content: '';
         display: block;
         position: absolute;
-        top: -10px;
-        left: 12px;
-        background-color: #fff;
-        padding: 0 4px;
-        font-size: 16px;
-        color: #707579; }
-      .container .first_screen .login_form form .user_pass input, .container .first_screen .login_form form .user_login input {
-        padding: 11px 13px;
-        border-radius: 10px;
-        border: solid 1px #c9c6c6;
         width: 100%;
-        height: 3.375rem;
-        font-size: 16px; }
-        .container .first_screen .login_form form .user_pass input:focus-visible, .container .first_screen .login_form form .user_login input:focus-visible {
-          outline-color: #3390EC; }
-    .container .first_screen .login_form form button {
-      display: block;
-      width: 100%;
-      padding: 11px 13px;
-      border-radius: 10px;
-      border: solid 1px #99BA92;
-      height: 3.375rem;
-      margin: auto;
-      background-color: #3390EC;
-      font-size: 25px;
-      text-align: center;
-      text-transform: uppercase;
-      cursor: pointer; }
-      .container .first_screen .login_form form button:hover {
-        border: solid 2px #222; }
+        height: 100%;
+        background: -moz-linear-gradient(-45deg, #cdeb8e 0%, #a5c956 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #cdeb8e 0%, #a5c956 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #cdeb8e 0%, #a5c956 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdeb8e', endColorstr='#a5c956', GradientType=1);
+        /* IE6-9 fallback on horizontal gradient */
+        opacity: 0.7; }
 
 /*# sourceMappingURL=style.css.map */
