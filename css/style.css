@@ -7,48 +7,108 @@
 .container {
   width: 100%;
   margin: auto;
-  padding: 0 15px;
-  height: 100vh; }
+  padding: 0 15px; }
+  .container button {
+    display: block;
+    width: 100%;
+    padding: 11px 13px;
+    border-radius: 10px;
+    border: solid 1px #99BA92;
+    height: 3.375rem;
+    margin: auto;
+    background-color: #3390EC;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff; }
+    .container button:hover {
+      border: solid 2px #222; }
+  .container .menu_panel {
+    width: 100%;
+    height: 40px;
+    padding: 10px; }
+    .container .menu_panel .burger_menu {
+      width: 30px;
+      height: 20px;
+      position: relative;
+      cursor: pointer; }
+      .container .menu_panel .burger_menu .burger {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background-color: #858383; }
+        .container .menu_panel .burger_menu .burger:before {
+          content: '';
+          width: 20px;
+          height: 2px;
+          background-color: #858383;
+          position: absolute;
+          top: 5px;
+          left: 0; }
+        .container .menu_panel .burger_menu .burger:after {
+          content: '';
+          width: 20px;
+          height: 2px;
+          background-color: #858383;
+          position: absolute;
+          top: -5px;
+          left: 0; }
+  .container .first_screen {
+    overflow: hidden;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    max-width: 370px; }
+    .container .first_screen .logo {
+      width: 130px;
+      height: 130px;
+      margin: 28px auto; }
+      .container .first_screen .logo img {
+        display: block;
+        width: 100%; }
+    .container .first_screen h1 {
+      margin-bottom: 35px;
+      text-transform: capitalize;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 0.1rem; }
+    .container .first_screen .login_form form .user_pass, .container .first_screen .login_form form .user_login {
+      position: relative;
+      margin-bottom: 25px;
+      transition: 0.3s; }
+      .container .first_screen .login_form form .user_pass:hover input, .container .first_screen .login_form form .user_login:hover input {
+        border: solid 1px #3390EC; }
+      .container .first_screen .login_form form .user_pass:hover label, .container .first_screen .login_form form .user_login:hover label {
+        color: #3390EC; }
+      .container .first_screen .login_form form .user_pass label, .container .first_screen .login_form form .user_login label {
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 12px;
+        background-color: #fff;
+        padding: 0 4px;
+        font-size: 16px;
+        color: #707579; }
+      .container .first_screen .login_form form .user_pass input, .container .first_screen .login_form form .user_login input {
+        padding: 11px 13px;
+        border-radius: 10px;
+        border: solid 1px #c9c6c6;
+        width: 100%;
+        height: 3.375rem;
+        font-size: 16px; }
+        .container .first_screen .login_form form .user_pass input:focus-visible, .container .first_screen .login_form form .user_login input:focus-visible {
+          outline-color: #3390EC; }
   .container .main_screen {
-    height: 100vh;
     display: flex; }
     .container .main_screen .left_side {
-      width: 40%;
+      width: 320px;
       background-color: #ffffff;
       border-right: solid 1px grey;
       overflow: auto; }
-      .container .main_screen .left_side .menu_panel {
-        width: 100%;
-        height: 40px;
-        padding: 10px; }
-        .container .main_screen .left_side .menu_panel .burger_menu {
-          width: 30px;
-          height: 20px;
-          position: relative;
-          cursor: pointer; }
-          .container .main_screen .left_side .menu_panel .burger_menu .burger {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 20px;
-            height: 2px;
-            background-color: #858383; }
-            .container .main_screen .left_side .menu_panel .burger_menu .burger:before {
-              content: '';
-              width: 20px;
-              height: 2px;
-              background-color: #858383;
-              position: absolute;
-              top: 5px;
-              left: 0; }
-            .container .main_screen .left_side .menu_panel .burger_menu .burger:after {
-              content: '';
-              width: 20px;
-              height: 2px;
-              background-color: #858383;
-              position: absolute;
-              top: -5px;
-              left: 0; }
       .container .main_screen .left_side .user_list ul {
         list-style: none;
         padding: 5px 0; }
@@ -62,7 +122,6 @@
             height: 50px;
             width: 50px;
             border-radius: 50%;
-            background-color: #000;
             overflow: hidden;
             margin-right: 15px; }
             .container .main_screen .left_side .user_list ul li .user_face img {
@@ -96,12 +155,10 @@
           overflow: hidden; }
           .container .main_screen .right_side .chatting .bottom .add_file {
             width: 5%;
-            height: 100%;
-            position: inherit;
-            bottom: 0; }
+            height: 100%; }
             .container .main_screen .right_side .chatting .bottom .add_file:before {
               margin-left: 15px;
-              font-family: "Font Awesome 6 Free";
+              font-family: "Font Awesome 6 Free", sans-serif;
               font-weight: 900;
               content: "\f0c6";
               display: inline-block;
@@ -157,5 +214,77 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdeb8e', endColorstr='#a5c956', GradientType=1);
         /* IE6-9 fallback on horizontal gradient */
         opacity: 0.7; }
+  .container .pop_up .user_info_pop {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(2px); }
+    .container .pop_up .user_info_pop .pop_block {
+      max-width: 320px;
+      height: 100vh;
+      background-color: #fff;
+      padding: 30px 0 30px 20px;
+      border-right: solid 1px #bebebe;
+      position: relative; }
+      .container .pop_up .user_info_pop .pop_block .menu_panel {
+        padding-left: 0;
+        display: flex;
+        justify-content: flex-end; }
+        .container .pop_up .user_info_pop .pop_block .menu_panel .burger_menu .burger {
+          height: 0; }
+          .container .pop_up .user_info_pop .pop_block .menu_panel .burger_menu .burger:before {
+            top: 0;
+            width: 30px;
+            transform: rotate(45deg); }
+          .container .pop_up .user_info_pop .pop_block .menu_panel .burger_menu .burger:after {
+            top: 0;
+            width: 30px;
+            transform: rotate(-45deg); }
+      .container .pop_up .user_info_pop .pop_block .user_face {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 15px;
+        margin-bottom: 15px; }
+        .container .pop_up .user_info_pop .pop_block .user_face img {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: inherit;
+          z-index: 2;
+          opacity: 1; }
+      .container .pop_up .user_info_pop .pop_block button {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        width: 80%;
+        transform: translate(-50%, 0); }
+  .container .pop_up .exit_pop {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px #3390EC;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px; }
+    .container .pop_up .exit_pop h2 {
+      font-size: 35px;
+      margin: 25px; }
+    .container .pop_up .exit_pop p {
+      text-align: center;
+      font-size: 24px; }
+    .container .pop_up .exit_pop .exit_btn_group {
+      margin-top: 50px;
+      display: flex; }
+      .container .pop_up .exit_pop .exit_btn_group button {
+        background-color: #fff;
+        border: solid 1px #3390EC;
+        width: 100px;
+        color: #3390EC;
+        cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
