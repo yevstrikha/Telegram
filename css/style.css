@@ -7,7 +7,8 @@
 .container {
   width: 100%;
   margin: auto;
-  padding: 0 15px; }
+  padding: 0 15px;
+  height: 100vh; }
   .container button {
     display: block;
     width: 100%;
@@ -62,7 +63,8 @@
     top: 45%;
     left: 50%;
     transform: translate(-50%, -45%);
-    max-width: 370px; }
+    max-width: 370px;
+    width: 100%; }
     .container .first_screen .logo {
       width: 130px;
       height: 130px;
@@ -103,6 +105,7 @@
         .container .first_screen .login_form form .user_pass input:focus-visible, .container .first_screen .login_form form .user_login input:focus-visible {
           outline-color: #3390EC; }
   .container .main_screen {
+    height: 100vh;
     display: flex; }
     .container .main_screen .left_side {
       width: 320px;
